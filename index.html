@@ -141,14 +141,28 @@
                             <h4 class="text-center">Design History</h4>
                         </div>
                 </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="ratio ratio-16x9 shadow-sm rounded">
-                                <iframe src="https://app.xmind.com/embed/MBf97hPz?sheet-id=57d99461f8896cf0547b8aecf8" frameborder="0" scrolling="no" loading="lazy" allow="fullscreen"></iframe>
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="xmind-placeholder" class="w-100 shadow-sm rounded text-center d-flex flex-column justify-content-center align-items-center" style="height: 500px; background-color: #F7F2EC; border: 2px dashed #60468D;">
+                            <h5 style="color: #60468D;">XMind Concept Map</h5>
+                            <p class="text-muted">Click to load the interactive map</p>
+                            <button id="loadXmindBtn" class="btn mt-2" style="background-color: #60468D; color: white;">
+                                Load Map
+                            </button>
                         </div>
+                        <div id="xmind-container" class="w-100 d-none"></div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="btn mt-4" style="background-color: #60468D; color: white;" href="assets/data/PACT Framework - Harmonia.pdf" role="button">Download the PACT! 📄</a>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="mb-4">
             <div class="container">
@@ -161,6 +175,27 @@
                     <div class="col-md-4 mb-sm-3"><img class="img-fluid w-100 h-100 lightbox-trigger" src="assets/img/Codes1.jpeg"></div>
                     <div class="col-md-4 mb-sm-3"><img class="img-fluid w-100 h-100 lightbox-trigger" src="assets/img/Codes2.jpeg"></div>
                     <div class="col-md-4 mb-sm-3"><img class="img-fluid w-100 h-100 lightbox-trigger" src="assets/img/Codes3.jpeg"></div>
+                </div>
+                <div class="row justify-content-center my-4">
+                    <div class="col-md-10 text-center">
+                        
+                        <div class="d-none d-md-block">
+                            <h5 style="color: #60468D;" class="mb-3">Document Preview</h5>
+                            <div class="ratio ratio-4x3 shadow-sm rounded">
+                                <object data="assets/data/CoDesign_MuseoMusica_v3_uxed.pdf" type="application/pdf" width="100%" height="100%">
+                                    <p>Preview not avaible.</p>
+                                </object>
+                            </div>
+                        </div>
+                        <div class="d-block d-md-none py-3 px-2 shadow-sm rounded" style="background-color: #F7F2EC; border: 1px solid #60468D;">
+                            <h6 style="color: #60468D;">Full Document</h6>
+                            <p class="small text-muted">The preview isn't avaible for mobile</p>
+                            <a href="assets/data/CoDesign_MuseoMusica_v3_uxed.pdf" target="_blank" class="btn w-100" style="background-color: #60468D; color: white;">
+                                📄 Open the PDF document
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -233,38 +268,55 @@
                 </div>
                 <div class="row justify-content-center my-4">
                     <div class="col-md-10 text-center">
-        
-                        <div class="mermaid" loading="lazy" >
-                            graph TD
-                                %% Definizione dei Macro-Cluster (Caratteristiche Positive)
-                                subgraph CL1 [Cluster 1: Phygital & Storytelling]
-                                    Unlock["<b>Unlock!</b><br>• Portable<br>• App-guided<br>• Storyline"]
-                                    Lebensborn["<b>My Child Lebensborn</b><br>• Historical narrative<br>• Persona simulation"]
-                                end
+                        <div class="w-100 overflow-x-auto pb-3">
+                            <div class="mermaid" style="min-width: 650px; margin: 0 auto;">
+                            %%{
+                                init: {
+                                    'theme': 'base',
+                                    'themeVariables': {
+                                    'primaryColor': '#F7F2EC',
+                                    'primaryBorderColor': '#60468D',
+                                    'primaryTextColor': '#60468D',
+                                    'lineColor': '#60468D',
+                                    'textColor': '#60468D',
+                                    'edgeLabelBackground': '#E9D8C6',
+                                    'fontFamily': 'Libre Baskerville, serif',
+                                    'fontSize': '16px'
+                                    }
+                                }
+                                }%%
+                                graph TD
+                                    subgraph CL1 [" "]
+                                        Unlock["<b>Unlock!</b><br>• Portable<br>• App-guided<br>• Storyline"]
+                                        Lebensborn["<b>My Child Lebensborn</b><br>• Historical narrative<br>• Persona simulation"]
+                                    end
 
-                                subgraph CL2 [Cluster 2: Haptic & Sensory Feedback]
-                                    GuitarHero["<b>Guitar Hero / DrumMania</b><br>• Vibration feedback<br>• Sensory stimulation<br>• Score system"]
-                                    MarioParty["<b>Super Mario Party</b><br>• Vibration feedback<br>• Solo/Co-op challenges"]
-                                end
+                                    subgraph CL2 [" "]
+                                        GuitarHero["<b>Guitar Hero / DrumMania</b><br>• Vibration feedback<br>• Sensory stimulation<br>• Score system"]
+                                        MarioParty["<b>Super Mario Party</b><br>• Vibration feedback<br>• Solo/Co-op challenges"]
+                                    end
 
-                                %% Il grande Gap comune
-                                Gap{{"🚨 THE UX GAP<br>(What NONE of them solves completely)"}}
-                                
-                                %% Caratteristiche del Gap
-                                Gap --- G1["<b>Embodiment</b><br>(Physical-spatial interaction)"]
-                                Gap --- G2["<b>Inclusive Audio Translation</b><br>(Haptic for d/Deaf accessibility)"]
-                                Gap --- G3["<b>360° Virtual Tour Integration</b><br>(Digital Heritage link)"]
+                                    %% Il grande Gap comune
+                                    Gap{{"🚨 THE GAP<br>(What NONE of them solves completely)"}}
+                                    
+                                    %% Caratteristiche del Gap
+                                    Gap --- G1["<b>Embodiment</b><br>(Physical-spatial interaction)"]
+                                    Gap --- G2["<b>Inclusive Audio Translation</b><br>(Haptic for d/Deaf accessibility)"]
+                                    Gap --- G3["<b>360° Virtual Tour Integration</b><br>(Digital Heritage link)"]
 
-                                %% Connessione verso la soluzione
-                                CL1 --> Gap
-                                CL2 --> Gap
-                                Gap ==> Harmonia(["🌟 <b>HARMONIA (Your Project)</b><br>Merges narrative, phygital board game,<br>sensory haptic music, and full embodiment."])
+                                    %% Connessioni dai singoli giochi verso il Gap
+                                    Unlock --> Gap
+                                    Lebensborn --> Gap
+                                    GuitarHero --> Gap
+                                    MarioParty --> Gap
+                                    
+                                    %% Connessione verso la soluzione
+                                    Gap ==> Harmonia(["🌟 <b>HARMONIA (Our Project)</b><br>Merges narrative, phygital board game,<br>sensory haptic music, and full embodiment."])
 
-                                %% Stili grafici
-                                style Gap fill:#ffdee2,stroke:#ff4d6d,stroke-width:2px;
-                                style Harmonia fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px;
-                                style CL1 fill:#f0f4f8,stroke:#bcccdc;
-                                style CL2 fill:#f5f0f5,stroke:#d6bcd6;
+                                    %% --- STILI INVISIBILI PER I SUBGRAPH ---
+                                    style CL1 fill:transparent,stroke:none;
+                                    style CL2 fill:transparent,stroke:none;
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -451,6 +503,75 @@
                         players. <br></br> Finally, the gameplay incorporates collaborative mechanics in team-based games, a penalty system to penalise
                         mistakes, and a hidden scoring system that recreates the suspense of the Philharmonic Academy’s historic vote.
                     </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 style="text-align:center;">User Flowchart</h4>
+                        <p>Here you can see our user flowchart:</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-4">
+                    <div class="col-md-10 text-center">
+                        <div class="w-100 overflow-x-auto pb-3">
+                            <div class="mermaid" style="min-width: 650px; margin: 0 auto;">
+                        %%{
+                                init: {
+                                    'theme': 'base',
+                                    'themeVariables': {
+                                    'primaryColor': '#F7F2EC',
+                                    'primaryBorderColor': '#60468D',
+                                    'primaryTextColor': '#60468D',
+                                    'lineColor': '#60468D',
+                                    'textColor': '#60468D',
+                                    'edgeLabelBackground': '#E9D8C6',
+                                    'fontFamily': 'Libre Baskerville, serif',
+                                    'fontSize': '16px'
+                                    }
+                                }
+                                }%%
+                                flowchart TD
+                                    %% Stili personalizzati %%
+                                    classDef default fill:#F7F2EC,stroke:#60468D,stroke-width:2px,color:#60468D;
+                                    classDef rombo fill:#F7F2EC,stroke:#60468D,stroke-width:2px,color:#60468D;
+
+                                    A([Start]) --> B[User buy the game]
+                                    B --> C[User download the app]
+                                    C --> D[User choose which module play]
+                                    D --> E{User has bought <br> the module?}
+                                    E -->|Yes| G[User play the game]
+                                    G --> H{User want <br> to continue?}
+                                    H -->|No| I([End])
+
+                                    E -->|No| F[User buy the module]
+                                    F --> D
+                                    
+                                    H -->|Yes| D
+
+                                    class E,H rombo;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 style="text-align:center;">User Swimlane</h4>
+                        <p>Here you can see our user swimlane diagram:</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-4">
+                    <div class="col-md-12">
+                        <div class="w-100 overflow-x-auto pb-3 shadow-sm rounded" style="background-color: #FAF8F5; border: 1px solid #E9D8C6;">
+                            <img src="assets/img/swimlane.png" class="img-fluid lightbox-trigger" style="min-width: 1000px;" alt="Service Blueprint di Harmonia">
+                        </div>
                     </div>
                 </div>
             </div>

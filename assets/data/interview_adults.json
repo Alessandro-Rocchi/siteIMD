@@ -1,0 +1,149 @@
+{
+  "interviews": {
+    "target": "Working Adults",
+    "derived_persona": "Sandra",
+    "interview": [
+      {
+        "name": "Luigi",
+        "age": 38,
+        "occupation": "Accountant, dairy company",
+        "transcript": [
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "Do you visit museums? In your city, when you travel, in general?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "Sometimes, yes. It's never something I plan though, it's always spontaneous."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "What makes you decide to go in?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "Mostly if something about the outside catches my attention, or if a friend suggests it. I never look anything up beforehand."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "Do you know any museums in Bologna?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "I know MAMbo by name. And I think there's a medieval one somewhere in the centre. But honestly I live here and I've never been to either, so that says everything. (Laughs)"
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "If I told you there's a museum called \"Museo Internazionale e Biblioteca della Musica di Bologna\", would that interest you?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "Never heard of it. From the name... I don't know, \"library of music\" sounds quite academic. I mean, music in general yes, I listen to a lot of it, and when I was a teenager I played drums in a band with some friends, nothing serious, just for fun. But something called a music library doesn't really make me think \"I want to go there\"."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "Do you play board games?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "Lately not much, honestly. But whenever someone proposes a game I'm always the first to say yes. I never turn it down."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "What's the last game you played?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "I think it was Codenames, a few weeks ago at a friend's place. We tend to go for things that are easy to pick up because nobody wants to spend half the evening reading rules."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "Have you ever tried a hybrid game, something that combines physical cards with a phone app?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "No, never. I know virtual reality quite well actually, I've tried different headsets and I find the technology genuinely interesting. But a board game with an app, no, I've never come across one."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "How does the idea sound to you?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "Interesting. If the app takes care of the more complicated parts and keeps the game moving, that could actually work really well. It sounds like it would feel more dynamic than a traditional board game."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "And if this hybrid game were set inside a museum, based on its collection?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "It would depend on how it's presented. If it feels like a lesson, no. But if the museum is just the setting and the game has a proper story and some competition, then yes, I'd play it. The museum theme wouldn't put me off."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "Would playing it make you curious to visit the museum afterwards?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "If the game made me feel something during it, yes. If I came out thinking \"wait, is that a real place, did that actually happen?\" then that curiosity would be genuine. It wouldn't feel like I was being pushed to go."
+          },
+          {
+            "type": "q",
+            "interviewer": "Adriana",
+            "text": "What would a game need to have to really get you into it?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Luigi",
+            "text": "A competitive element for sure, I like winning. (Laughs)"
+          }
+        ]
+      },
+      {
+        "name": "Marta",
+        "age": 33,
+        "occupation": "Marketing Coordinator",
+        "quote": "I go to museums mainly when something catches my eye on Instagram or I happen to be near one with free time. I had no idea the Music Museum existed. I recognise some classical pieces from films but it has never been something I'd seek out. Evenings with friends are my favourite way to unwind and board games have become a regular part of that. A game that introduced me to the museum through a story and some friendly competition would feel natural, not like a cultural obligation. I could see myself visiting afterwards if the game made me genuinely curious."
+      },
+      {
+        "name": "Riccardo",
+        "age": 36,
+        "occupation": "Sales Manager",
+        "quote": "I barely visit museums in my own city, I just never get around to it between work and sport. Classical music is something I associate with concerts my parents used to watch on TV, not with my own free time. I played guitar in a band at university and I still go to live gigs, but the classical world feels like a separate universe. I enjoy board games when the rules are not too heavy. A card and app format sounds accessible. If a game gave me a way into the museum through something fun and competitive, I think that barrier would disappear."
+      },
+      {
+        "name": "Claudia",
+        "age": 30,
+        "occupation": "HR Specialist",
+        "quote": "My free time is limited so I'm selective about how I spend it. I do enjoy cultural outings but only when they feel accessible, not when they require background knowledge I don't have. I recognise some classical music but it has never sparked real curiosity in me. I play board games regularly with friends and I like experiences that surprise me without overwhelming me. The idea of a game that uses a museum as its setting is interesting precisely because it lowers the threshold. You engage with the content playfully first, and the visit becomes something you want rather than something you feel you should do."
+      },
+      {
+        "name": "Giovanna",
+        "age": 60,
+        "occupation": "Retired School Administrator",
+        "quote": "I know the Music Museum in Bologna, I visited it once. I know very little about classical music, maybe a handful of famous pieces I have heard somewhere, but that is about it. Board games are something I associate more with my grandchildren, though I have played cards my whole life. The hybrid format with an app intrigues me but also makes me a little nervous. I use my smartphone and tablet every day, I video call my family, I shop online, so technology is not foreign to me at all. It is more that I worry about being slow on certain interfaces, or not understanding something quickly enough and holding the group back. But I think those are things you get over once you start playing. If someone sat down with me and walked me through it once, I am sure I would be fine."
+      }
+    ]
+  }
+}

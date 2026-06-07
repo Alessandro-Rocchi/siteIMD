@@ -1,0 +1,272 @@
+{
+  "interviews": {
+    "target": "Young Students",
+    "interview": [
+      {
+        "name": "Davide M.",
+        "age": 18,
+        "occupation": "High School Student (ITIS)",
+        "transcript": [
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "When you travel or visit other places, or even within your own city, do you visit museums?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Maybe the more important ones."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "What makes you say \"I want to visit this museum, I really want to go\"?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Either a past desire of mine, or maybe I know there's something interesting inside that might appeal to me, and I go to see it."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "And where do you usually get this information? How do you find out whether a museum might interest you or not?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "From social media."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Have you ever been to Bologna?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Yes."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Have you ever visited a museum in Bologna?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "No."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Do you know any museum or cultural place in Bologna, even by name?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "No."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "So if I told you there's a museum in Bologna called \"Museo Internazionale e Biblioteca della Musica di Bologna\", what can you tell me about it?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Nothing. (Laughs)"
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Would you be interested in visiting it just knowing the name?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Well, why not? Music is an art form, so..."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Do you play board games?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Not frequently, but I have played them."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Do you enjoy them?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Yes, some can be interesting, others less so."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Can you think of the last game you played?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Mercante in Fiera."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "So if someone proposed a board game for an evening, what would you say?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "I'd try it. We play a round, I see if I like it, and if I don't, that's it."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "And if the game were linked to a historical, cultural or artistic topic maybe featuring things you could find in a museum would you still be interested in trying it?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "If it's something that interests me, yes. If it's something I don't like, no."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "By \"something you like\" do you mean the topic of the game or the type of game?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "The topic."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "So for example, if someone proposed a board game about the Music Museum of Bologna?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "If I had already visited the museum and liked it, I would definitely try it."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "But what if you didn't know the museum, like now I come to you and propose a game about it?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "It could also be a way to get to know the museum starting from the board game."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "And would you then be motivated to visit the museum after playing?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Yes."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Regardless, or only in a specific situation?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Well, yes if I found something interesting in the game that I then wanted to see again, I would definitely go."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Can you imagine a situation where you play a game and think \"I really liked this, I want to go see it in person\"? What would make you excited about a game like this?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "How the game is structured."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "For example?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "I don't know, you could start from an image... I don't know. (Laughs)"
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Take a game you've played that you really like, and imagine it being adapted for a museum."
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "I don't know, like Memory? Some element from inside the museum... matching two things... maybe adapting Memory a bit like pairing a definition with an image and trying to associate them."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "Would you prefer something like a mini-game style puzzle, or something with mystery?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Both could work having clues to reach some element present in the museum, retracing a kind of story. But if I had to choose, a mini-game. It could be better for learning something at a cultural level."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "If a teacher came into class and proposed playing a board game based on a museum's collection, what would be your first impression?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Something interesting. It's definitely better than having a lesson."
+          },
+          {
+            "type": "q",
+            "interviewer": "Asia",
+            "text": "So you'd be willing to try it?"
+          },
+          {
+            "type": "a",
+            "interviewee": "Davide M.",
+            "text": "Yes."
+          }
+        ]
+      },
+      {
+        "name": "Filippo",
+        "age": 21,
+        "occupation": "University Student",
+        "quote": "I visit famous museums, not because I particularly like them, but because there's clearly something important to see. I would try an unfamiliar game without hesitation and if its elements really struck me, I'd go visit the museum too. What matters is being involved at a narrative level, a story I can immerse myself in, like Cluedo."
+      },
+      {
+        "name": "Matilde",
+        "age": 23,
+        "occupation": "University Student, Industrial Design Engineering",
+        "quote": "I don't think many people would genuinely want to play a game about a museum out of real interest. But I would still have it explained to me and give it a try if it has a fun storyline, then I like it. And if it's just a card deck and an app, it seems easier than most, so I'd be more motivated. I'd visit the museum afterwards only if it's about things that interest me."
+      },
+      {
+        "name": "Alice",
+        "age": 23,
+        "occupation": "University Student, Sociology",
+        "quote": "I know the Music Museum I've always wanted to visit it but never managed to go. My flatmates got me into board games and I had a great time. I don't rule anything out precisely because I know so little about this world. There's always that element of discovering how it works that really draws me in it's a definite yes."
+      }
+    ]
+  }
+}

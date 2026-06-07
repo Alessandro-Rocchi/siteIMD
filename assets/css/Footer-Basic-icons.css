@@ -39,12 +39,12 @@
 
 .bs-icon.bs-icon-primary-light {
   color: var(--bs-primary);
-  background: rgba(var(--bs-primary-rgb),.2);
+  background: rgba(var(--bs-primary-rgb), .2);
 }
 
 .bs-icon.bs-icon-semi-white {
   color: var(--bs-primary);
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, .5);
 }
 
 .bs-icon.bs-icon-rounded {
@@ -53,11 +53,5 @@
 
 .bs-icon.bs-icon-circle {
   border-radius: 50%;
-}
-
-.menu-interviste-scroll {
-  max-height: 600px;
-  overflow-y: auto;
-  padding-right: 10px;
 }
 

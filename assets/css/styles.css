@@ -1,0 +1,127 @@
+/* Limita l'altezza del menù e attiva lo scorrimento */
+.menu-interviste-scroll {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Limita l'altezza del riquadro di testo e lo rende scorrevole autonomamente */
+.content-riquadro-scroll {
+  max-height: 570px; 
+  overflow-y: auto;
+}
+
+/* --- PERSONALIZZAZIONE DEI BOTTONI --- */
+.custom-menu .nav-link {
+  color: #60468d;             /* Colore del testo normale */
+  background-color: #F3EEE7;  /* Sfondo grigio leggero di base */
+  border-radius: 10px;        /* Bordi molto arrotondati */
+  padding: 12px 16px;         /* Più spazio interno */
+  margin-bottom: 8px;         /* Distanza tra un bottone e l'altro */
+  border-left: 4px solid transparent; /* Linea decorativa invisibile di base */
+  transition: all 0.25s ease; /* Transizione fluida nei cambi di stato */
+}
+
+/* Comportamento quando si passa sopra con il mouse (Hover) */
+.custom-menu .nav-link:hover {
+  color: #60468d;
+  background-color: #F3EEE7;
+  border-left-color: #adb5bd; /* La linea laterale diventa grigia */
+}
+
+/* Comportamento del bottone selezionato (Active) */
+.custom-menu .nav-link.active {
+  color: #60468d !important;      /* Testo blu */
+  background-color: #F3EEE7;     /* Sfondo azzurro chiarissimo */
+  font-weight: 600;              /* Testo più spesso */
+  border-left-color: #60468d;    /* La linea laterale diventa blu spessa */
+  box-shadow: none;              /* Rimuove l'ombra blu nativa di Bootstrap */
+}
+
+
+/* ==========================================================================
+   PERSONALIZZAZIONE FINESTRA (IL CONTENITORE)
+   ========================================================================== */
+.content-riquadro-scroll {
+  max-height: 570px; 
+  overflow-y: auto;
+  
+  /* Sfondo e Bordi del riquadro */
+  background-color: #ffffff;
+  border: 1px solid #e3e6f0;
+  border-radius: 16px;       /* Arrotondamento della finestra */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Ombra morbida */
+  
+  /* Spazio interno tra il bordo del riquadro e il testo */
+  padding: 2.5rem !important; 
+}
+
+/* Personalizzazione della barra di scorrimento interna della finestra */
+.content-riquadro-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.content-riquadro-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   PERSONALIZZAZIONE DEL TESTO (TIPOGRAFIA)
+   ========================================================================== */
+
+/* Stile generale del corpo dell'intervista */
+.intervista-corpo {
+  line-height: 1.6;          /* Interlinea che migliora la leggibilità */
+  font-size: 1.05rem;
+}
+
+/* Blocco della Domanda */
+.int-domanda .nome-intervistatore {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #60468d;            /* Colore identificativo dell'intervistatore */
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+.testo-domanda {
+  color: #60468d;            /* Colore scuro e nitido per la domanda */
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Blocco della Risposta */
+.int-risposta {
+  padding-left: 1.25rem;     /* Rientro della risposta rispetto alla domanda */
+  border-left: 3px solid #e2e8f0; /* Linea verticale di cortesia a sinistra */
+}
+.int-risposta .nome-intervistato {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  display: block;
+  margin-bottom: 2px;
+}
+.testo-risposta {
+  color: #334155;            /* Colore leggermente più morbido per la lettura estesa */
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* Personalizzazione della finestra del menu laterale */
+.finestra-menu {
+  background-color: #F7F2EC; /* Sfondo personalizzato (es. un azzurro-grigio chiarissimo) */
+}
+
+/* Personalizzazione della finestra dove compare il testo dell'intervista */
+.finestra-contenuti {
+  background-color: #F7F2EC; /* Sfondo bianco pulito */
+  /* Se cambi lo sfondo con uno scuro, ricordati di impostare anche il colore del testo principale */
+  /* color: #ffffff; */
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}

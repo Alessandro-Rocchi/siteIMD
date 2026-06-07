@@ -121,7 +121,19 @@
   /* color: #ffffff; */
 }
 
-html, body {
+/* Applica l'isolamento solo al contenitore dei contenuti */
+.page-wrapper {
   overflow-x: hidden;
   width: 100%;
+}
+
+/* Cambia il cursore in una lente di ingrandimento per le immagini predisposte */
+.lightbox-trigger {
+  cursor: zoom-in;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Rende l'immagine leggermente vibrante al passaggio del mouse */
+.lightbox-trigger:hover {
+  opacity: 0.95;
 }

@@ -1,0 +1,161 @@
+// --- PARTE 1: SCRIPT AUTOMATICO DEL TEMA (NON TOCCARE) ---
+window.innerWidth<768&&[].slice.call(document.querySelectorAll("[data-bss-disabled-mobile]")).forEach(function(e){e.classList.remove("animated"),e.removeAttribute("data-bss-hover-animate"),e.removeAttribute("data-aos"),e.removeAttribute("data-bss-parallax-bg"),e.removeAttribute("data-bss-scroll-zoom")}),document.addEventListener("DOMContentLoaded",function(){!function(){if("requestAnimationFrame"in window){var e=[],t=document.querySelectorAll("[data-bss-parallax-bg]");for(var a of t){var n=document.createElement("div");n.style.backgroundImage=a.style.backgroundImage,n.style.backgroundSize="cover",n.style.backgroundPosition="center",n.style.position="absolute",n.style.height="200%",n.style.width="100%",n.style.top=0,n.style.left=0,n.style.zIndex=-100,a.appendChild(n),e.push(n),a.style.position="relative",a.style.background="transparent",a.style.overflow="hidden"}if(e.length){var i,o=[];window.addEventListener("scroll",r),window.addEventListener("resize",r),r()}}function r(){o.length=0;for(var t=0;t<e.length;t++){var a=e[t].parentNode.getBoundingClientRect();a.bottom>0&&a.top<window.innerHeight&&o.push({rect:a,node:e[t]})}cancelAnimationFrame(i),o.length&&(i=requestAnimationFrame(l))}function l(){for(var e=0;e<o.length;e++){var t=o[e].rect,a=o[e].node,n=Math.max(t.bottom,0)/(window.innerHeight+t.height);a.style.transform="translate3d(0, "+-50*n+"%, 0)"}}}()},!1);
+
+// --- PARTE 2: IL NOSTRO CODICE PER IL JSON ---
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('assets/data/interview.json')
+    .then(response => {
+      if (!response.ok) throw new Error("Errore nel caricamento del file JSON");
+      return response.json();
+    })
+    .then(data => costruisciInterfaccia(data.interviews.interview))
+    .catch(error => console.error("Si è verificato un errore:", error));
+});
+
+function costruisciInterfaccia(listaInterviste) {
+  const tabContainer = document.getElementById("v-pills-tab");
+  const contentContainer = document.getElementById("v-pills-tabContent");
+
+  if (!tabContainer || !contentContainer) return;
+
+  listaInterviste.forEach((persona, index) => {
+    const isFirst = index === 0;
+    const idSafe = persona.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+
+    const button = document.createElement("button");
+    button.className = `nav-link text-start mb-2 ${isFirst ? "active" : ""}`;
+    button.id = `v-pills-${idSafe}-tab`;
+    button.type = "button";
+    button.setAttribute("data-bs-toggle", "pill");
+    button.setAttribute("data-bs-target", `#v-pills-${idSafe}`);
+    button.setAttribute("aria-controls", `v-pills-${idSafe}`);
+    button.setAttribute("aria-selected", isFirst ? "true" : "false");
+    button.textContent = `${index + 1}. ${persona.name}`;
+    
+    tabContainer.appendChild(button);
+
+    const pane = document.createElement("div");
+    pane.className = `tab-pane fade ${isFirst ? "show active" : ""}`;
+    pane.id = `v-pills-${idSafe}`;
+    pane.setAttribute("role", "tabpanel");
+    pane.setAttribute("aria-labelledby", `v-pills-${idSafe}-tab`);
+
+    let corpoIntervistaHTML = "";
+
+    if (persona.transcript) {
+      corpoIntervistaHTML = persona.transcript.map(battuta => {
+    if (battuta.type === "q") {
+      return `
+        <div class="int-domanda mt-4 mb-2">
+          <span class="nome-intervistatore">${battuta.interviewer}</span>
+          <h5 class="testo-domanda">${battuta.text}</h5>
+        </div>`;
+    } else if (battuta.type === "a") {
+      return `
+        <div class="int-risposta mb-4">
+          <span class="nome-intervistato">${battuta.interviewee}</span>
+          <p class="testo-risposta">${battuta.text}</p>
+        </div>`;
+    }
+  }).join("");
+} else if (persona.quote) {
+      corpoIntervistaHTML = `<blockquote class="blockquote p-4 bg-light rounded-3 mt-4 text-secondary fst-italic">"${persona.quote}"</blockquote>`;
+    }
+
+    pane.innerHTML = `
+      <div class="border-bottom pb-3 mb-4">
+        <h2 class="fw-bold mb-2">${persona.name}</h2>
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="badge bg-dark">${persona.occupation}</span>
+          <span class="badge border border-secondary text-secondary">Età: ${persona.age}</span>
+        </div>
+      </div>
+      <div class="intervista-corpo">${corpoIntervistaHTML}</div>
+    `;
+
+    contentContainer.appendChild(pane);
+  });
+}
+
+
+// INTERVISTE ADULTI 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('assets/data/interview_adults.json')
+    .then(response => {
+      if (!response.ok) throw new Error("Errore nel caricamento del file JSON Adulti");
+      return response.json();
+    })
+    .then(data => {
+    
+      if (data.interviews && data.interviews.interview) {
+        costruisciInterfacciaAdulti(data.interviews.interview);
+      }
+    })
+    .catch(error => console.error("Errore Caricamento Adulti:", error));
+});
+
+function costruisciInterfacciaAdulti(listaIntervisteAdulti) {
+  const tabContainer = document.getElementById("v-pills-tab-adulti");
+  const contentContainer = document.getElementById("v-pills-tabContent-adulti");
+
+  if (!tabContainer || !contentContainer) return;
+
+  listaIntervisteAdulti.forEach((persona, index) => {
+    const isFirst = index === 0;
+    
+    const idSafe = 'adulto-' + persona.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+
+    const button = document.createElement("button");
+    button.className = `nav-link text-start mb-2 ${isFirst ? "active" : ""}`;
+    button.id = `v-pills-${idSafe}-tab`;
+    button.type = "button";
+    button.setAttribute("data-bs-toggle", "pill");
+    button.setAttribute("data-bs-target", `#v-pills-${idSafe}`);
+    button.setAttribute("aria-controls", `v-pills-${idSafe}`);
+    button.setAttribute("aria-selected", isFirst ? "true" : "false");
+    button.textContent = `${index + 1}. ${persona.name}`;
+
+    tabContainer.appendChild(button);
+
+    const pane = document.createElement("div");
+    pane.className = `tab-pane fade ${isFirst ? "show active" : ""}`;
+    pane.id = `v-pills-${idSafe}`;
+    pane.setAttribute("role", "tabpanel");
+    pane.setAttribute("aria-labelledby", `v-pills-${idSafe}-tab`);
+
+    let corpoIntervistaHTML = "";
+
+    if (persona.transcript) {
+      corpoIntervistaHTML = persona.transcript.map(battuta => {
+        if (battuta.type === "q") {
+          return `
+            <div class="int-domanda mt-4 mb-2">
+              <span class="nome-intervistatore">${battuta.interviewer}</span>
+              <h5 class="testo-domanda">${battuta.text}</h5>
+            </div>`;
+        } else if (battuta.type === "a") {
+          return `
+            <div class="int-risposta mb-4">
+              <span class="nome-intervistato">${battuta.interviewee}</span>
+              <p class="testo-risposta">${battuta.text}</p>
+            </div>`;
+        }
+      }).join("");
+    } else if (persona.quote) {
+      corpoIntervistaHTML = `<blockquote class="blockquote p-4 bg-light rounded-3 mt-4 text-secondary fst-italic">"${persona.quote}"</blockquote>`;
+    }
+
+    pane.innerHTML = `
+      <div class="border-bottom pb-3 mb-4">
+        <h2 class="fw-bold mb-2">${persona.name}</h2>
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="badge bg-dark">${persona.occupation}</span>
+          <span class="badge border border-secondary text-secondary">Età: ${persona.age}</span>
+        </div>
+      </div>
+      <div class="intervista-corpo">${corpoIntervistaHTML}</div>
+    `;
+
+    contentContainer.appendChild(pane);
+  });
+}

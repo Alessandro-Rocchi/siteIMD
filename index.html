@@ -56,9 +56,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col pt-2 pb-2"><img class="img-thumbnail img-fluid w-100 h-100 lightbox-trigger" width="1920" height="1080" src="assets/img/render.png?h=fa272fc9a71c7de03a38fa4a837156d6"></div>
-                    <div class="col">
+                    <div class="col pt-2 pb-2">
+                       <div class="shadow-sm rounded overflow-hidden" style="background-color: #FAF8F5; height: 500px; border: 1px solid #E9D8C6;">
+                            <model-viewer 
+                                src="assets/img/render_box.glb" 
+                                alt="Modello 3D di Harmonia" 
+                                auto-rotate 
+                                camera-controls 
+                                shadow-intensity="1"
+                                class="w-100 h-100"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                    </div>
+                    <div class="col text-center">
                         <p style="color:#60468D;text-align:center;"><br><strong>Harmonia is a competitive hybrid phygital board game</strong> designed for the <i>Museo Internazionale e Biblioteca della Musica</i> di Bologna, developed to expand the communicative and educational potential of the museum's Official Virtual Tour (VN 360°).&nbsp;</p>
+                        <p style="text-align:center;">We create a Design Brief which contains the main information for the design of the game:</p>
+                        <a class="btn mt-4" style="background-color: #60468D; color: white;" href="assets/data/DesignBrief_Paper_Exam.pdf" role="button">Download the DESIGN BRIEF! 📄</a>
                     </div>
                 </div>
             </div>
@@ -154,12 +168,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-12 text-center">
                         <a class="btn mt-4" style="background-color: #60468D; color: white;" href="assets/data/PACT Framework - Harmonia.pdf" role="button">Download the PACT! 📄</a>
-                    </div>
-                    <div class="col-md-4">
                     </div>
                 </div>
             </div>
@@ -178,9 +188,8 @@
                 </div>
                 <div class="row justify-content-center my-4">
                     <div class="col-md-10 text-center">
-                        
                         <div class="d-none d-md-block">
-                            <h5 style="color: #60468D;" class="mb-3">Document Preview</h5>
+                            <h5 style="color: #60468D;" class="mb-3">CO-Design Process Overview</h5>
                             <div class="ratio ratio-4x3 shadow-sm rounded">
                                 <object data="assets/data/CoDesign_MuseoMusica_v3_uxed.pdf" type="application/pdf" width="100%" height="100%">
                                     <p>Preview not avaible.</p>
@@ -194,7 +203,6 @@
                                 📄 Open the PDF document
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -570,7 +578,7 @@
                 <div class="row justify-content-center my-4">
                     <div class="col-md-12">
                         <div class="w-100 overflow-x-auto pb-3 shadow-sm rounded" style="background-color: #FAF8F5; border: 1px solid #E9D8C6;">
-                            <img src="assets/img/swimlane.png" class="img-fluid lightbox-trigger" style="min-width: 1000px;" alt="Service Blueprint di Harmonia">
+                            <img src="assets/img/swimlane.svg" class="img-fluid lightbox-trigger" style="min-width: 1000px;" alt="Service Blueprint di Harmonia">
                         </div>
                     </div>
                 </div>
@@ -603,84 +611,77 @@
             </div>
         </section>
         <section class="container my-5 py-4">
-    <hr class="mb-5">
-
-    <h2 class="text-center mb-5 font-weight-bold" id="team">Our roles</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-        <div class="col">
-            <div class="card h-100 text-center border-0 shadow-sm">
-                <div class="p-4">
-                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&auto=format&fit=crop&q=80"
-                        alt="Maria - Narrative and Visual Designer" class="rounded-circle mx-auto mb-3 d-block"
-                        style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
-                    <h5 class="card-title mb-1">Maria Cavaleri</h5>
-                    <p class="small mb-3 text-uppercase font-weight-bold"
-                        style="color: #60468D; letter-spacing: 0.5px;">Narrative & Visual Designer</p>
-                    <p class="card-text text-muted small">
-                        Research, Interactive narrative design
-                        (Twine); visual and graphic design of the
-                        game
-                    </p>
+            <hr class="mb-5">
+            <h2 class="text-center mb-5 font-weight-bold" id="team">Our roles</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="p-4">
+                            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&auto=format&fit=crop&q=80"
+                                alt="Maria - Narrative and Visual Designer" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
+                            <h5 class="card-title mb-1">Maria Cavaleri</h5>
+                            <p class="small mb-3 text-uppercase font-weight-bold"
+                                style="color: #60468D; letter-spacing: 0.5px;">Narrative & Visual Designer</p>
+                            <p class="card-text text-muted small">
+                                Research, Interactive narrative design
+                                (Twine); visual and graphic design of the
+                                game
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="p-4">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&auto=format&fit=crop&q=80"
+                                alt="Asia - UX Researcher & Strategist" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
+                            <h5 class="card-title mb-1">Asia Marselli</h5>
+                            <p class="small mb-3 font-weight-bold" style="color: #60468D;">UX Researcher & Strategist</p>
+                            <p class="card-text text-muted small">
+                                User research; semi-structured interviews;
+                                persona creation; PACT framework; design
+                                brief
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="p-4">
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&auto=format&fit=crop&q=80"
+                                alt="Adriana - UX Researcher & Data Analyst" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
+                            <h5 class="card-title mb-1">Adriana Monte</h5>
+                            <p class="small mb-3 font-weight-bold" style="color: #60468D;">UX Researcher & Data Analyst</p>
+                            <p class="card-text text-muted small">
+                                User research; interviews; persona creation;
+                                sentiment analysis of TripAdvisor reviews;
+                                PACT framework; design brief
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="p-4">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&auto=format&fit=crop&q=80"
+                                alt="Alessandro - Technical Director & Developer" class="rounded-circle mx-auto mb-3 d-block"
+                                style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
+                            <h5 class="card-title mb-1">Alessandro Rocchi</h5>
+                            <p class="small mb-3 font-weight-bold" style="color: #60468D;">Technical Director & Developer</p>
+                            <p class="card-text text-muted small">
+                                Technical consultant; interactive narrative
+                                development (Twine); 3D modelling (Blender);
+                                user flow and swimlane diagrams; web page
+                                setup; game loop design
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 text-center border-0 shadow-sm">
-                <div class="p-4">
-                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&auto=format&fit=crop&q=80"
-                        alt="Asia - UX Researcher & Strategist" class="rounded-circle mx-auto mb-3 d-block"
-                        style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
-                    <h5 class="card-title mb-1">Asia Marselli</h5>
-                    <p class="small mb-3 font-weight-bold" style="color: #60468D;">UX Researcher & Strategist</p>
-                    <p class="card-text text-muted small">
-                        User research; semi-structured interviews;
-                        persona creation; PACT framework; design
-                        brief
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 text-center border-0 shadow-sm">
-                <div class="p-4">
-                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&auto=format&fit=crop&q=80"
-                        alt="Adriana - UX Researcher & Data Analyst" class="rounded-circle mx-auto mb-3 d-block"
-                        style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
-                    <h5 class="card-title mb-1">Adriana Monte</h5>
-                    <p class="small mb-3 font-weight-bold" style="color: #60468D;">UX Researcher & Data Analyst</p>
-                    <p class="card-text text-muted small">
-                        User research; interviews; persona creation;
-                        sentiment analysis of TripAdvisor reviews;
-                        PACT framework; design brief
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 text-center border-0 shadow-sm">
-                <div class="p-4">
-                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&auto=format&fit=crop&q=80"
-                        alt="Alessandro - Technical Director & Developer" class="rounded-circle mx-auto mb-3 d-block"
-                        style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #60468D;">
-                    <h5 class="card-title mb-1">Alessandro Rocchi</h5>
-                    <p class="small mb-3 font-weight-bold" style="color: #60468D;">Technical Director & Developer</p>
-                    <p class="card-text text-muted small">
-                        Technical consultant; interactive narrative
-                        development (Twine); 3D modelling (Blender);
-                        user flow and swimlane diagrams; web page
-                        setup; game loop design
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+        </section>
     </main>
     <footer class="text-center bg-body" data-bs-theme="light">
         <div class="container py-4 py-lg-5">
@@ -710,6 +711,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <script src="assets/js/bs-init.js?h=9c676b3f7359f68ca34a6d9159de32f1"></script>
     <script src="assets/js/script.min.js?h=25c9af619778ea0d773ed2c6ab4e6abd"></script>
     <script type="module">
